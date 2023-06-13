@@ -1,0 +1,122 @@
+
+
+<main class="text-center" id="proyectos">
+  <div class="contenedor">
+    <h2 class="m-4">Proyectos realizados</h2>
+    <div class="container">
+      <div class="grid row">
+        <% proyectos = [
+          {
+            title: 'Administrador de pacientes para veterinaria',
+            img: 'administradorveterinaria.jpg',
+            alt: 'img veterinaria',
+            repo: 'https://github.com/martaalcazarr/citasveterinario'
+          },
+          {
+            title: 'Cotizador de criptomonedas',
+            img: 'cotizadorcripto.jpg',
+            alt: 'img cripto',
+            repo: 'https://github.com/martaalcazarr/criptoreact'
+          },
+          {
+            title: 'Planificador de gastos',
+            img: 'planificadorgastos.jpg',
+            alt: 'img gastos',
+            repo: 'https://github.com/martaalcazarr/gastos-react'
+          },
+          {
+            title: 'Cotizador para créditos',
+            img: 'cotizadorcredito.jpg',
+            alt: 'img cotizador',
+            repo: 'https://github.com/martaalcazarr/cotizador-react'
+          },
+          {
+            title: 'Agencia de viajes',
+            img: 'agenciaviajespug.jpg',
+            alt: 'img agencia',
+            repo: 'https://github.com/martaalcazarr/agenciaviajesnode'
+          },
+          {
+            title: 'Calculadora de consumos y propinas',
+            img: 'calculadoraconsumos.jpg',
+            alt: 'img restaurante',
+            repo: 'https://github.com/martaalcazarr/restaurantepropinas'
+          },
+          {
+            title: 'CRM',
+            img: 'crmjson.jpg',
+            alt: 'img crm',
+            repo: 'https://github.com/martaalcazarr/crmjsonserver'
+          },
+          {
+            title: 'Buscador de recetas',
+            img: 'buscadorrecetas.jpg',
+            alt: 'img buscador recetas',
+            repo: 'https://github.com/martaalcazarr/foodrecipefinder'
+          },
+          {
+            title: 'Buscador de imágenes',
+            img: 'buscadorimagenes.jpg',
+            alt: 'img buscador imágenes',
+            repo: 'https://github.com/martaalcazarr/imagefinder'
+          },
+          {
+            title: 'Buscador de clima',
+            img: 'buscadorclima.jpg',
+            alt: 'img buscador clima',
+            repo: 'https://github.com/martaalcazarr/apiclima'
+          },
+          {
+            title: 'Calculadora de gastos',
+            img: 'calculadoragastos.jpg',
+            alt: 'img calculadora',
+            repo: 'https://github.com/martaalcazarr/calculadoragastos'
+          },
+          {
+            title: 'Cotizador de seguros de auto',
+            img: 'cotizadorseguro.jpg',
+            alt: 'img cotizador seguros',
+            repo: 'https://github.com/martaalcazarr/cotizador-de-seguro'
+          },
+          {
+            title: 'Carrito de compras',
+            img: 'carritocompras.jpg',
+            alt: 'img carrito',
+            repo: 'https://github.com/martaalcazarr/carritodecompras'
+          },
+          {
+            title: 'Landing Page AudioTech',
+            img: 'landingpageaudiotech.jpg',
+            alt: 'img landingpage audifonos',
+            repo: 'https://github.com/martaalcazarr/landingpage'
+          },
+          {
+            title: 'Landing page freelancer',
+            img: 'landingpagefreelancer.jpg',
+            alt: 'img landingpage freelancer',
+            repo: 'https://github.com/martaalcazarr/contacto'
+          },
+          {
+            title: 'Landing page e-commerce',
+            img: 'landingpageecomerce.jpg',
+            alt: 'img landingpage ecommerce',
+            repo: 'https://github.com/martaalcazarr/tiendaropa'
+          }
+        ] %>
+        
+       <% proyectos.each do |proyecto| %>
+          <div class="col-md-4">
+            <div class="card m-2">
+              <div>
+                <p class="grid-title"><%= proyecto[:title] %></p>
+                <%= image_tag "#{proyecto[:img]}", alt: proyecto[:alt], class: 'img-fluid' %>
+                <a href="<%= proyecto[:repo] %>">Repositorio</a>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        
+      </div>
+    </div>
+  </div>
+</main>

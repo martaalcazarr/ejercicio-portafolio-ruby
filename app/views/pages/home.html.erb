@@ -1,19 +1,56 @@
 
-<h1>Portafolio</h1>
 
-<div class="card mb-3" style="max-width: 100%;">
+<div class="card border-0 mt-4 mb-3" style="max-width: 100%;">
 <div class="row g-0">
 <div class="col-md-4">
-<%= image_tag  'user.png', class: 'profile-img'%> 
+<%= image_tag  'profile-pic.png', class: 'profile-img'%> 
 </div>
 <div class="col-md-8">
 <div class="card-body">
 <h5 class="card-title">Marta Alcázar Redondo</h5>
 <h6 class="card-text">Desarrollador FullStack</h6>
-<p class="card-text">Este es mi portafolio</p>
-<p class="card-text">Linkedin:</p>
-<p class="card-text">Github:</p>
-<p class="card-text"><small class="text-muted">Chile</small></p>
+<p class="card-text">Como desarrolladora web fullstack tengo experiencia en la realización de aplicaciones web desde cero, utilizando principalmente el lenguaje JavaScript, y diversas herramientas como frameworks, librerías y bases de datos para diseñar y crear soluciones. Amo instruirme en cosas nuevas de todo ámbito que me interese y creo que cada día se puede aprender algo nuevo. Activa, incansable y con sed de conocimiento.</p>
+
 </div>
 </div>
+</div>
+
+<section class="text-center" id="tecnologias">
+  <div class="">
+    <h2 class="m-4">Tecnologías</h2>
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <% technology_icons = [
+          { icon: 'html.svg', alt: 'HTML icon', title: 'HTML' },
+          { icon: 'css.svg', alt: 'CSS icon', title: 'CSS' },
+          { icon: 'javascript.svg', alt: 'JavaScript icon', title: 'JavaScript' },
+          { icon: 'bootstrap.svg', alt: 'Bootstrap icon', title: 'Bootstrap' },
+          { icon: 'git.svg', alt: 'Git icon', title: 'Git' },
+          { icon: 'github.svg', alt: 'GitHub icon', title: 'GitHub' },
+          { icon: 'mysql.svg', alt: 'MySQL icon', title: 'MySQL' },
+          { icon: 'postgresql.svg', alt: 'PostgreSQL icon', title: 'PostgreSQL' },
+          { icon: 'mongodb.svg', alt: 'MongoDB icon', title: 'MongoDB' },
+          { icon: 'nodejs.svg', alt: 'Nodejs icon', title: 'Nodejs' },
+          { icon: 'express.svg', alt: 'Express icon', title: 'Express' },
+          { icon: 'tailwind.svg', alt: 'Tailwind CSS icon', title: 'Tailwind CSS' },
+          { icon: 'react.svg', alt: 'React icon', title: 'React' },
+          { icon: 'vite.svg', alt: 'Vite icon', title: 'Vite' },
+          { icon: 'vue.svg', alt: 'Vuejs icon', title: 'Vuejs' },
+          { icon: 'pug.svg', alt: 'Pug icon', title: 'Pug' }
+        ] %>
+
+     <% technology_icons.each do |technology| %>
+          <div class="col">
+            <div class="card h-100 p-3">
+              <%= image_tag "#{technology[:icon]}", alt: technology[:alt], class: 'card-img-top' %>
+              <div class="card-body">
+                <p class="card-text"><%= technology[:title] %></p>
+            </div>
+          </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
