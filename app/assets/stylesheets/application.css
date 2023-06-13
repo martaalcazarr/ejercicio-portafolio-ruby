@@ -16,8 +16,41 @@
 
 .text-decoration{
     text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 .profile-img{
     width: 15rem;
     height: 15rem;
 }
+
+.nav-link{
+    color: black;
+    text-transform: uppercase;
+}
+
+.grid-title-container{
+    height: 4.6rem;
+}
+.grid-title{
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.6rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
